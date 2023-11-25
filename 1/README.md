@@ -34,4 +34,4 @@ The repository contains two main files:
 3. Usage throughout the Week: The usage count is generally lower on weekends (Saturday and Sunday) than on weekdays. However, the average usage duration is longer on weekends. This suggests that users are more likely to use the service for leisure rather than commuting on the weekends.
 
 ## Acknowledgements
-Thanks to [FordGoBike](https://www.fordgobike.com/) for making this dataset publicly available for use. This project would not have been possible without this dataset. Also, thanks to all the Python and Data Science community for their valuable resources and help.
+Thanks to FordGoBike for making this dataset publicly available for use. This project would not have been possible without this dataset. Also, thanks to all the Python and Data Science community for their valuable resources and help.
