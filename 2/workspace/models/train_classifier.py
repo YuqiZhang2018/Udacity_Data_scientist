@@ -21,7 +21,7 @@ import pandas as pd
 
 # load data from database
 
-engine = create_engine('sqlite:///InsertDatabaseName.db')
+engine = create_engine('sqlite:///data/InsertDatabaseName.db')
 df = pd.read_sql_table("InsertTableName", con=engine)
 
 

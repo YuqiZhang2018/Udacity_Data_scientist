@@ -21,7 +21,8 @@ from sqlalchemy import create_engine
 
 
 # load messages dataset
-messages = pd.read_csv("messages.csv")
+# messages = pd.read_csv("messages.csv")
+messages = pd.read_csv("data/messages.csv")
 messages.head()
 
 
@@ -29,7 +30,8 @@ messages.head()
 
 
 # load categories dataset
-categories = pd.read_csv("categories.csv")
+# categories = pd.read_csv("categories.csv")
+categories = pd.read_csv("data/categories.csv")
 categories.head()
 
 
@@ -162,7 +164,7 @@ df.duplicated().sum()
 # In[28]:
 
 
-engine = create_engine('sqlite:///InsertDatabaseName.db')
+engine = create_engine('sqlite:///data/InsertDatabaseName.db')
 df.to_sql('InsertTableName', engine, index=False)
 
 
