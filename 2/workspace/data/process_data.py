@@ -25,15 +25,18 @@ def clean_data(df):
     # Replace `categories` column in df with new category columns
     df.drop('categories', axis=1, inplace=True)
     df = pd.concat([df, categories], axis=1)
-
+    print(df.columns)
+    df = df[df['related'] != 2]
+    
     # Remove duplicates
     df.drop_duplicates(inplace=True)
+
     return df
 
 
 def save_data(df, database_filename):
     engine = create_engine('sqlite:///' + database_filename)
-    df.to_sql('DisasterResponse', engine, index=False)
+    df.to_sql('DisasterResponse', engine, index=False, if_exists='replace')
 
 
 def main():
