@@ -62,6 +62,27 @@ RandomForestClassifier also has an accuracy of 68% but has a lower recall for la
 
 Given the business requirement is to maximize the identification of customers who will use coupons (label 1), the DecisionTreeClassifier is the recommended model. Its recall of 72% for label 1 is the highest among the models, suggesting that it will be the most effective at capturing potential coupon users. While this may result in a higher number of false positives (customers who won't use the coupon but are predicted to do so), this is acceptable within our strategic framework, as the cost of misidentifying non-responsive customers is likely lower than the opportunity cost of missing out on responsive ones.
 
+## Library used
+import pandas
+import numpy
+import math
+import json
+import pandas
+import matplotlib.pyplot
+import seaborn
+from tqdm.auto import tqdm
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, accuracy_score
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.neural_network import MLPClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+from sklearn.model_selection import GridSearchCV
+
 ## Acknowledgements
 
-Thanks to FordGoBike for making this dataset publicly available for use. This project would not have been possible without this dataset. Also, thanks to all the Python and Data Science community for their valuable resources and help.
+Thanks for Udacity.
+
+My BLOG is https://medium.com/@yuqi.zhang2020/udacity-course-data-scientist-starbucks-capstone-challenge-fd8e4db36fc7
